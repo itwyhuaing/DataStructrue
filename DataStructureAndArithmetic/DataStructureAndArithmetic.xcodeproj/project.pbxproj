@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26BB95DC2252FFA1005C3146 /* DataParserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BB95DA2252FFA1005C3146 /* DataParserManager.m */; };
+		26BB95E02252FFB5005C3146 /* DataParserViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BB95DE2252FFB5005C3146 /* DataParserViewManager.m */; };
 		26DC06F81E4AC6D4009D8F96 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DC06F71E4AC6D4009D8F96 /* main.m */; };
 		26DC07011E4AC6D4009D8F96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26DC06FF1E4AC6D4009D8F96 /* Main.storyboard */; };
 		26DC07031E4AC6D4009D8F96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26DC07021E4AC6D4009D8F96 /* Assets.xcassets */; };
@@ -15,10 +17,13 @@
 		26DC07141E4AC755009D8F96 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DC07121E4AC755009D8F96 /* ViewController.m */; };
 		26DC071E1E4AEFD5009D8F96 /* DataParserVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DC071A1E4AEFD5009D8F96 /* DataParserVC.m */; };
 		26DC07211E4AEFEF009D8F96 /* DataParserMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DC07201E4AEFEF009D8F96 /* DataParserMainView.m */; };
-		26DC07241E4AEFFF009D8F96 /* DataParserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DC07231E4AEFFF009D8F96 /* DataParserManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26BB95DA2252FFA1005C3146 /* DataParserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataParserManager.m; sourceTree = "<group>"; };
+		26BB95DB2252FFA1005C3146 /* DataParserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataParserManager.h; sourceTree = "<group>"; };
+		26BB95DE2252FFB5005C3146 /* DataParserViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataParserViewManager.m; sourceTree = "<group>"; };
+		26BB95DF2252FFB5005C3146 /* DataParserViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataParserViewManager.h; sourceTree = "<group>"; };
 		26DC06F31E4AC6D4009D8F96 /* DataStructureAndArithmetic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataStructureAndArithmetic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26DC06F71E4AC6D4009D8F96 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		26DC07001E4AC6D4009D8F96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -33,8 +38,6 @@
 		26DC071A1E4AEFD5009D8F96 /* DataParserVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataParserVC.m; sourceTree = "<group>"; };
 		26DC071F1E4AEFEF009D8F96 /* DataParserMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataParserMainView.h; sourceTree = "<group>"; };
 		26DC07201E4AEFEF009D8F96 /* DataParserMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataParserMainView.m; sourceTree = "<group>"; };
-		26DC07221E4AEFFF009D8F96 /* DataParserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataParserManager.h; sourceTree = "<group>"; };
-		26DC07231E4AEFFF009D8F96 /* DataParserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataParserManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +51,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26BB95D92252FFA1005C3146 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				26BB95DA2252FFA1005C3146 /* DataParserManager.m */,
+				26BB95DB2252FFA1005C3146 /* DataParserManager.h */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		26BB95DD2252FFB5005C3146 /* ViewManager */ = {
+			isa = PBXGroup;
+			children = (
+				26BB95DE2252FFB5005C3146 /* DataParserViewManager.m */,
+				26BB95DF2252FFB5005C3146 /* DataParserViewManager.h */,
+			);
+			path = ViewManager;
+			sourceTree = "<group>";
+		};
 		26DC06EA1E4AC6D4009D8F96 = {
 			isa = PBXGroup;
 			children = (
@@ -91,7 +112,8 @@
 			children = (
 				26DC07181E4AEFD5009D8F96 /* Controller */,
 				26DC071C1E4AEFD5009D8F96 /* View */,
-				26DC071D1E4AEFD5009D8F96 /* ViewModel */,
+				26BB95D92252FFA1005C3146 /* Manager */,
+				26BB95DD2252FFB5005C3146 /* ViewManager */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -123,15 +145,6 @@
 				26DC07201E4AEFEF009D8F96 /* DataParserMainView.m */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		26DC071D1E4AEFD5009D8F96 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				26DC07221E4AEFFF009D8F96 /* DataParserManager.h */,
-				26DC07231E4AEFFF009D8F96 /* DataParserManager.m */,
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,11 +219,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26BB95E02252FFB5005C3146 /* DataParserViewManager.m in Sources */,
 				26DC07211E4AEFEF009D8F96 /* DataParserMainView.m in Sources */,
 				26DC07141E4AC755009D8F96 /* ViewController.m in Sources */,
+				26BB95DC2252FFA1005C3146 /* DataParserManager.m in Sources */,
 				26DC071E1E4AEFD5009D8F96 /* DataParserVC.m in Sources */,
 				26DC07131E4AC755009D8F96 /* AppDelegate.m in Sources */,
-				26DC07241E4AEFFF009D8F96 /* DataParserManager.m in Sources */,
 				26DC06F81E4AC6D4009D8F96 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -12,7 +12,7 @@
 
 @interface DataParserVC () <DataParserMainViewDelegate>
 
-@property (nonatomic,strong) DataParserManager *manager;
+@property (nonatomic,strong) DataParserManager  *manager;
 @property (nonatomic,strong) DataParserMainView *mainView;
 
 @end

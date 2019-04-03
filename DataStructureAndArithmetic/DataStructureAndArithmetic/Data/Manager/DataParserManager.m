@@ -26,12 +26,7 @@
 
     NSArray *tmpArr = @[@"choiceSortOrder",@"choiceSortOrder2",
                         @"bubblingSortOrder1",@"bubblingSortOrder2",
-                        @"insertSortOrder1",@"insertSortOrder2",
-                        @"7",@"8",
-                        @"9",@"0",
-                        @"0",@"0",
-                        @"0",@"0",
-                        @"0",@"0"];
+                        @"insertSortOrder1",@"insertSortOrder2",];
     return tmpArr;
 }
 
