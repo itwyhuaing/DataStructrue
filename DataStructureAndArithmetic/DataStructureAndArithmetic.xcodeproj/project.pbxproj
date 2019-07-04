@@ -54,8 +54,8 @@
 		26BB95D92252FFA1005C3146 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				26BB95DA2252FFA1005C3146 /* DataParserManager.m */,
 				26BB95DB2252FFA1005C3146 /* DataParserManager.h */,
+				26BB95DA2252FFA1005C3146 /* DataParserManager.m */,
 			);
 			path = Manager;
 			sourceTree = "<group>";

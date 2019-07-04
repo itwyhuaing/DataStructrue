@@ -24,14 +24,14 @@
 
 -(NSArray *)loadDataSource{
 
-    NSArray *tmpArr = @[@"choiceSortOrder",@"choiceSortOrder2",
-                        @"bubblingSortOrder1",@"bubblingSortOrder2",
-                        @"insertSortOrder1",@"insertSortOrder2",];
+    NSArray *tmpArr = @[@"选择排序choiceSortOrder",@"选择排序choiceSortOrder2",
+                        @"冒泡排序bubblingSortOrder1",@"冒泡排序bubblingSortOrder2",
+                        @"插入排序insertSortOrder1",@"插入排序insertSortOrder2",];
     return tmpArr;
 }
 
 #pragma mark --- choiceSortOrder
-/*
+/**
  思路 ：每次在剩余数组元素中筛选出最小值
  漏洞问题: 倘若数组中有相同数值，则结果出错！ [resultArr addObject:r] 会一次性把相同的全部移除
  */
@@ -61,7 +61,7 @@
     return [NSString stringWithFormat:@"%ld",min];
 }
 
-/*
+/**
  思路： i j k 三个指针  其中 k 始终指向最小值元素的位置
  1> 每轮循环选择未排序元素中的最小值 ，然后交换到对应位置
  2> 第一轮循环结束，最小值必定在最前面
@@ -79,11 +79,13 @@
                 k = j;
             }
         }
+        // 将找到的最小值交换到当前循环的最前面
         if (k != i) {
             tmp = resultArr[i];
             resultArr[i] = resultArr[k];
             resultArr[k] = tmp;
         }
+        
     }
     return resultArr;
     
@@ -91,7 +93,7 @@
 
 #pragma mark --- bubblingSortOrder
 
-/*
+/**
  实现思路 :
  1> 整个数组，相邻两元素相比较，后者较大则交换
  2> 第一轮比较结束之后，最大值会被交换至数组最后面
@@ -113,13 +115,12 @@
             }
             
         }
-        
-        
+
     }
     return resultArr;
 }
 
-/*
+/**
  优化实现 : 
  若是没有交换，则说明该数组是已经排好的，则可结束代码执行。
  */
@@ -151,7 +152,7 @@
 
 #pragma mark --- insertSortOrder
 
-/*
+/**
  实现思路:
  1> 原数组一分为 2 ，分别为 数组A 数组B,其中A数组只有原数组中一个元素，B数组中存有余下所有元素 ，此时可以将A视为有序数组，将B视为无序数组
  2> 一次取出B数组中的元素，排序到A数组中
@@ -187,7 +188,7 @@
     return resultArr;
 }
 
-/*
+/**
  实现思路:
  对比于方案一，该方案主要采用指针操作。
  1> 首先找出需要插入的位置 j
@@ -218,6 +219,8 @@
     return resultArr;
     
 }
+
+
 
 //#pragma mark --- bubblingSortOrder
 //

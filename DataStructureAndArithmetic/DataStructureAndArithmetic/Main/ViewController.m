@@ -18,12 +18,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self.navigationController pushViewController:[[DataParserVC alloc] init] animated:YES];
     
 }
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
 
-    [self.navigationController pushViewController:[[DataParserVC alloc] init] animated:YES];
+    
     
 }
 
